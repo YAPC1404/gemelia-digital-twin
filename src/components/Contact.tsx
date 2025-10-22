@@ -19,9 +19,11 @@ const Contact = () => {
               <Mail className="mr-2 h-5 w-5" />
               Enviar Email
             </Button>
-            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-              <MessageSquare className="mr-2 h-5 w-5" />
-              WhatsApp
+            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground" asChild>
+              <a href="https://wa.me/528116607360" target="_blank" rel="noopener noreferrer">
+                <MessageSquare className="mr-2 h-5 w-5" />
+                WhatsApp
+              </a>
             </Button>
           </div>
         </div>
