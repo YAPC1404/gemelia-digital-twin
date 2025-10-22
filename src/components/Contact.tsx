@@ -15,9 +15,11 @@ const Contact = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8">
-              <Mail className="mr-2 h-5 w-5" />
-              Enviar Email
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8" asChild>
+              <a href="mailto:contacto@gemelia.com.mx">
+                <Mail className="mr-2 h-5 w-5" />
+                Enviar Email
+              </a>
             </Button>
             <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground" asChild>
               <a href="https://wa.me/528116607360" target="_blank" rel="noopener noreferrer">
